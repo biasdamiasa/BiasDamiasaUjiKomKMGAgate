@@ -1,12 +1,14 @@
+using System.Collections;
 using UnityEngine;
 
-public class SpawnBullet : MonoBehaviour
+public class SpawnEnemy : MonoBehaviour
 {
-    public GameObject bulletObject;
+    public GameObject[] arrayEnemy; 
+    public bool masihSpawn = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        StartCoroutine(spawnEnemy());
     }
 
     // Update is called once per frame
@@ -15,11 +17,19 @@ public class SpawnBullet : MonoBehaviour
         
     }
 
-    public void spawnBullet()
+    IEnumerator spawnEnemy()
     {
-        Vector3 posisiKlik = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        while (masihSpawn)
+        {
+            Vector3 spawnPosition = new Vector3(Random.Range(-8,8), Screen.height, 0);
 
+            int index = Random.Range(0, arrayEnemy.Length);
+
+            GameObject enemyToSpawn = arrayEnemy[index];
+
+            Instantiate(enemyToSpawn, spawnPosition, Quaternion.identity);
+        }
         
-        // Instantiate(bulletObject, new Vector3)
-    }
+        yield return new WaitForSeconds(2);          
+    }    
 }

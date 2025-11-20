@@ -209,12 +209,12 @@ GameObject:
   - component: {fileID: 1442443350}
   - component: {fileID: 1442443349}
   m_Layer: 0
-  m_Name: SpawnBullet
+  m_Name: SpawnEnemyManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1442443349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +227,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dbe409c5077b0049826851ce70892cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletObject: {fileID: 8452418302039544155, guid: 9f1b44e396dc5f148a8e4c95c3f7fdd3, type: 3}
+  arrayEnemy:
+  - {fileID: 4747769752806199599, guid: 768b49c890b93dd49ae1ff55f6f9976a, type: 3}
+  - {fileID: 3235875444122672473, guid: 631b5d08cdf455b43b63e57448e5ef11, type: 3}
+  - {fileID: 6584726600036549845, guid: 87005c07828d8074f9acc145b36f8209, type: 3}
+  masihSpawn: 1
 --- !u!4 &1442443350
 Transform:
   m_ObjectHideFlags: 0
