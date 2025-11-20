@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour
@@ -17,7 +18,10 @@ public class TimerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (waktu == maxWaktu)
+        {
+            SceneManager.LoadScene("Result");
+        }
     }
 
     IEnumerator DisplayTimer()
