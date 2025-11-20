@@ -4,6 +4,8 @@ using UnityEngine;
 public class MoveMouseScript : MonoBehaviour
 {
     public GameObject bullet;
+
+    // public float speed = 5.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,16 +29,6 @@ public class MoveMouseScript : MonoBehaviour
         {
             Shoot();
         }
-
-        // Vector2 worldMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        // Vector2 playerPosition = new Vector2(worldMousePosition.x, worldMousePosition.y);
-
-        // Vector2 minimum = Camera.main.ScreenToWorldPoint(new Vector3(0,0,0));
-        // Vector2 maximum = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0));
-
-        // playerPosition.x = Mathf.Clamp(playerPosition.x, minimum.x, maximum.x);
-
-        // transform.position = Vector2.MoveTowards(transform.position, worldMousePosition, 1f);
     }
 
     public void Shoot()
@@ -47,5 +39,7 @@ public class MoveMouseScript : MonoBehaviour
         Vector2 shootPosition = new Vector3 (squarePosition.x, transform.position.y, 0);
 
         Instantiate(bullet, shootPosition, Quaternion.identity);
+
+        // bulletShoot.transform.Translate(0, Time.deltaTime * speed, 0 );
     }
 }

@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 7924320342060648135}
   - component: {fileID: 6850102020173850830}
   - component: {fileID: -3449405881799824578}
-  - component: {fileID: -1800108096449467764}
+  - component: {fileID: -7391842176400714248}
+  - component: {fileID: 4788564230872080645}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +126,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!50 &-1800108096449467764
+--- !u!50 &-7391842176400714248
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -152,3 +153,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4788564230872080645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452418302039544155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8547c777e4645584e8939fe681a4f0dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}

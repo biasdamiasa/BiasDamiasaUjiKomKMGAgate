@@ -198,6 +198,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1391220544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391220546}
+  - component: {fileID: 1391220545}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1391220545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391220544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b612dc00087ab54ea86ba3d28da6f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  nyawa: 0
+--- !u!4 &1391220546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391220544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.026855, y: 0.73340034, z: -0.09472534}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1442443348
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,10 +273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dbe409c5077b0049826851ce70892cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrayEnemy:
-  - {fileID: 4747769752806199599, guid: 768b49c890b93dd49ae1ff55f6f9976a, type: 3}
-  - {fileID: 3235875444122672473, guid: 631b5d08cdf455b43b63e57448e5ef11, type: 3}
-  - {fileID: 6584726600036549845, guid: 87005c07828d8074f9acc145b36f8209, type: 3}
+  enemy1: {fileID: 4747769752806199599, guid: 768b49c890b93dd49ae1ff55f6f9976a, type: 3}
+  enemy2: {fileID: 3235875444122672473, guid: 631b5d08cdf455b43b63e57448e5ef11, type: 3}
+  enemy3: {fileID: 6584726600036549845, guid: 87005c07828d8074f9acc145b36f8209, type: 3}
   masihSpawn: 1
 --- !u!4 &1442443350
 Transform:
@@ -448,3 +493,4 @@ SceneRoots:
   - {fileID: 1123574885}
   - {fileID: 2051094489}
   - {fileID: 1442443350}
+  - {fileID: 1391220546}
