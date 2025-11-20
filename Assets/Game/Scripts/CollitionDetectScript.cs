@@ -20,7 +20,7 @@ public class CollitionDetectScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // scoreManager.TambahScore();
+            scoremanager.TambahScore();
             Destroy(gameObject);
             // DestroyBullet();
         }
